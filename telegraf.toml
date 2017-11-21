@@ -1,0 +1,7 @@
+[template]
+src = "telegraf.conf.tmpl"
+dest = "/etc/telegraf/telegraf.conf"
+keys = [
+    "/bleemeo/hostname",
+]
+check_cmd = "/usr/bin/telegraf config"
