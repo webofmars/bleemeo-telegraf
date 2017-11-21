@@ -12,4 +12,4 @@ RUN chmod a+x /entrypoint_confd.sh
 
 ENV BLEEMEO_HOSTNAME=_docker_undef
 ENTRYPOINT [ "/entrypoint_confd.sh" ]
-CMD [ "telegraf" ]
+CMD [ "telegraf", "--config-directory", "/etc/telegraf/telegraf.d" ]
